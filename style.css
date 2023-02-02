@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@100;200;300;400;500;600;800;900&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.text_color {
+    background-color: #00ff01;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.time_wrapper {
+    position: relative;
+}
+
+#time {
+    text-shadow: 0 0 40px #3bac2c;
+    font-size: 12rem;
+}
+
+#sec {
+    position: absolute;
+    bottom: 40px;
+    font-size: 2rem;
+}
+
+#mid {
+    position: absolute;
+    top: 35px;
+    right: -80px;
+    font-size: 3rem;
+}
+
+.day_wrapper {
+    display: flex;
+    position: relative;
+    left: 20px;
+    justify-content: space-between;
+}
+
+.day_wrapper span {
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: .3;
+}
+
+#showDate {
+    position: relative;
+    left: 20px;
+    font-size: 1.5rem;
+    gap: 10px;
+}
+
+/* Responsive web design */
+@media only screen and (max-width: 447px) {
+    #time {
+        font-size: 6rem;
+    }
+    #sec {
+        font-size: 1.2rem;
+        bottom: 20px;
+    }
+    #mid {
+        font-size: 1.5rem;
+        right: 0;
+        top: 23px;
+    }
+    .day_wrapper span {
+        font-size: 0.8rem;
+        padding-right: 10px;
+    }
+    #showDate {
+        font-size: 1rem;
+    }
+}
